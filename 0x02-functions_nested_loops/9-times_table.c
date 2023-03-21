@@ -29,6 +29,6 @@ void times_table(void)
 			}
 		}
 		_putchar('\n');
-		m = m - i;
+		m = m - 1;
 	}
 }
