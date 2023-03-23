@@ -12,16 +12,24 @@ int main(void)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
 		{
-			printf("%s ", "FizzBuzz");
+			printf("%s", "FizzBuzz");
+			if (i < 100)
+				printf(" ");
 		} else if (i % 5 == 0)
 		{
-			printf("%s ", "Buzz");
+			printf("%s", "Buzz");
+			if (i < 100)
+				printf(" ");
 		} else if (i % 3 == 0)
 		{
-			printf("%s ", "Fizz");
+			printf("%s", "Fizz");
+			if (i < 100)
+				printf(" ");
 		} else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+			if (i < 100)
+				printf(" ");
 		}
 	}
 	printf("\n");
