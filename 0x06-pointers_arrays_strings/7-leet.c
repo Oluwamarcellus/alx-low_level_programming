@@ -1,36 +1,25 @@
 /**
 *leet - encodes string to 1337
-*@a: string
+*@s: string
 *Return: char
 */
 
-char *leet(char *a)
+char *leet(char *s)
 {
-	int i = 0;
+	int i = 0, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	while (a[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (a[i] == 'a' || a[i] == 'A')
+		for (j = 0; j < 10; j++)
 		{
-			a[i] = '4';
-		}
-		if (a[i] == 'e' || a[i] == 'E')
-		{
-			a[i] = '3';
-		}
-		if (a[i] == 'o' || a[i] == 'O')
-		{
-			a[i] = '0';
-		}
-		if (a[i] == 't' || a[i] == 'T')
-		{
-			a[i] = '7';
-		}
-		if (a[i] == 'l' || a[i] == 'L')
-		{
-			a[i] = '1';
+			if (s[i] == a[j])
+			{
+				s[i] = b[j];
+			}
 		}
 		i++;
 	}
-	return (a);
+	return (s);
 }
