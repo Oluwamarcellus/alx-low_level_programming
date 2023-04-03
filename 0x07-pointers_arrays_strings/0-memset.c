@@ -4,22 +4,16 @@
 *@s: string
 *@b: constant string
 *@n: bumber of bytes to fill
+*Return: char
 */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int sLen = 0, i;
+	unsigned int i;
 
-	while (s[sLen] != '\0')
+	for (i = 0; i < n; i++)
 	{
-		sLen++;
-	}
-	for (i = 0; i < sLen; i++)
-	{
-		if (i < n)
-		{
-			s[i] = b;
-		}
+		s[i] = b;
 	}
 	return (s);
 }
