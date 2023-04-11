@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		s2_len++;
 	}
 	g_len = (s1_len + s2_len);
-	a = malloc(sizeof(char) * g_len);
+	a = malloc(sizeof(char) * (g_len + 1));
 	if (a == 0)
 		return (0);
 	s1_len = 0;
@@ -37,4 +37,5 @@ char *str_concat(char *s1, char *s2)
 		s2_len++;
 	}
 	return (a);
+
 }
