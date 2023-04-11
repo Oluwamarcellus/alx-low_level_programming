@@ -3,7 +3,7 @@
 *argstostr - concatenates all the arguments
 *@ac: arguments counts
 *@av: array of strings
-*Return: 0
+*Return: pointer to char
 */
 char *argstostr(int ac, char **av)
 {
