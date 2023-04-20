@@ -1,7 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
-*print_all - unction that prints anything
+*print_all - function that prints anything
 *@format: list of types of arguments passed
 *Return: void
 *
@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	va_list list;
 
 	va_start(list, format);
-	while (format[i] != '\0')
+	while (format != 0 && format[i] != '\0')
 	{
 		switch (format[i])
 		{
