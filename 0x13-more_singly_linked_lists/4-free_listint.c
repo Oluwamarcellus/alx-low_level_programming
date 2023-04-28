@@ -6,10 +6,9 @@
 */
 void free_listint(listint_t *head)
 {
-	if (head != NULL)
-	{
-		free_listint(head->next);
-		free(head);
-		head = NULL;
-	}
+	if (head == NULL)
+		return;
+	free_listint(head->next);
+	free(head);
+	head = NULL;
 }
