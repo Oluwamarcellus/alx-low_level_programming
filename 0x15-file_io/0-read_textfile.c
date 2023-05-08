@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	signed int size;
 	signed int size2;
-	char buff[1024];
+	char buff[4000];
 
 	if (filename == NULL)
 		return (0);
@@ -24,12 +24,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	size2 = write(STDOUT_FILENO, buff, letters);
-	if (size2 == -1 || size2 != (ssize_t)letters)
+	size2 = write(STDOUT_FILENO, buff, size);
+	if (size2 == -1 || size != size2)
 	{
 		close(fd);
 		return (0);
 	}
 	close(fd);
-	return (size);
+	return (size2);
 }
