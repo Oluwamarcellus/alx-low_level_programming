@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	int idx;
 	hash_node_t *new = NULL;
 
-	if (!key || *key == '\0' || !value || *value == '\0' || !ht)
+	if (!key || !*key || !ht)
 		return (0);
 
 	str = malloc(sizeof(strlen(value) + 1));
