@@ -6,7 +6,7 @@
  *array of integers using the Exponential search algorithm
  *@array: List to traverse
  *@size: Size of the list to traverse
- *value: Value to search for in the list
+ *@value: Value to search for in the list
  *Return: The index where the value is found or -1
  */
 
@@ -39,10 +39,11 @@ int exponential_search(int *array, size_t size, int value)
 #include "search_algos.h"
 
 /**
- *binary_search - function that searches for a value in a sorted
+ *exponent_binary_search - function that searches for a value in a sorted
  *array of integers using the Binary search algorithm
  *@array: List of elements to search
- *@size: Size of the list
+ *@L: Lowest index of the list
+ *@R: Highest index of the list
  *@value: Value to search for in the list
  *Return: Index where the element is found or -1
  */
