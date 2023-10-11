@@ -11,7 +11,7 @@ int jump_search(int *array, size_t size, int value);
 int interpolation_search(int *array, size_t size, int value);
 int exponential_search(int *array, size_t size, int value);
 int exponent_binary_search(int *array, size_t L, size_t R, int value);
-
-
+int advanced_binary(int *array, size_t size, int value);
+int adv_binary_search(int *array, size_t L, size_t R, int value);
 
 #endif
