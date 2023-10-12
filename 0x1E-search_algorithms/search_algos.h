@@ -27,9 +27,9 @@ int adv_binary_search(int *array, size_t L, size_t R, int value);
  */
 typedef struct listint_s
 {
-    int n;
-    size_t index;
-    struct listint_s *next;
+	int n;
+	size_t index;
+	struct listint_s *next;
 } listint_t;
 
 
