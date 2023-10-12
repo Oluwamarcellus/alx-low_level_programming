@@ -54,7 +54,7 @@ int exponent_binary_search(int *array, size_t L, size_t R, int value)
 
 	while (L <= R)
 	{
-		print_list(array, L, R);
+		print_list_arr(array, L, R);
 		M = (L + R) / 2;
 		if (array[M] == value)
 			return (M);
@@ -67,14 +67,14 @@ int exponent_binary_search(int *array, size_t L, size_t R, int value)
 }
 
 /**
- *print_list - Prints list
+ *print_list_arr - Prints list
  *@array: list to print
  *@L: starting point
  *@R: ending point
  *Return: void
  */
 
-void print_list(int *array, int L, int R)
+void print_list_arr(int *array, int L, int R)
 {
 	int i = 0;
 
